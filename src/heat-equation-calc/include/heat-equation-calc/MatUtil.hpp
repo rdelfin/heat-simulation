@@ -9,6 +9,6 @@
 class MatUtil {
 public:
     static Eigen::VectorXd vectorize(const Eigen::MatrixXd& mat);
-    static Eigen::MatrixXd matricise(const Eigen::VectorXd& vec, int rows, int cols);
+    static Eigen::MatrixXd matricise(const Eigen::VectorXd& vec, long rows, long cols);
 };
 

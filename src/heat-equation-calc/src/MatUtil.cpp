@@ -13,7 +13,7 @@ Eigen::VectorXd MatUtil::vectorize(const Eigen::MatrixXd &mat) {
     return vec;
 }
 
-Eigen::MatrixXd MatUtil::matricise(const Eigen::VectorXd &vec, int rows, int cols) {
+Eigen::MatrixXd MatUtil::matricise(const Eigen::VectorXd &vec, long rows, long cols) {
     if(vec.size() != cols * rows) {
         return Eigen::MatrixXd::Zero(1, 1);
     }
